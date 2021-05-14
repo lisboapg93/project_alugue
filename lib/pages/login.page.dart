@@ -5,11 +5,7 @@ class LoginPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        padding: EdgeInsets.only(
-          top: 60,
-          left: 40,
-          right: 40
-        ),
+        padding: EdgeInsets.only(top: 60, left: 40, right: 40),
         color: Colors.white,
         child: ListView(
           children: <Widget>[
@@ -26,14 +22,11 @@ class LoginPage extends StatelessWidget {
               decoration: InputDecoration(
                 labelText: "email",
                 labelStyle: TextStyle(
-                  color: Colors.black38,
-                  fontWeight: FontWeight.w400,
-                  fontSize: 20
-                ),
+                    color: Colors.black38,
+                    fontWeight: FontWeight.w400,
+                    fontSize: 20),
               ),
-              style: TextStyle(
-                fontSize: 20
-              ),
+              style: TextStyle(fontSize: 20),
             ),
             SizedBox(
               height: 10,
@@ -44,14 +37,11 @@ class LoginPage extends StatelessWidget {
               decoration: InputDecoration(
                 labelText: "senha",
                 labelStyle: TextStyle(
-                  color: Colors.black38,
-                  fontWeight: FontWeight.w400,
-                  fontSize: 20
-                ),
+                    color: Colors.black38,
+                    fontWeight: FontWeight.w400,
+                    fontSize: 20),
               ),
-              style: TextStyle(
-                fontSize: 20
-              ),
+              style: TextStyle(fontSize: 20),
             ),
             Container(
               height: 40,
@@ -87,14 +77,16 @@ class LoginPage extends StatelessWidget {
               child: SizedBox.expand(
                 child: FlatButton(
                   child: Row(
-                    children: <Widget> [
-                      Text("Login",
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        color: Colors.white,
-                        fontSize: 20,
-                      ),
-                      textAlign: TextAlign.center,
+                    children: <Widget>[
+                      Text(
+                        "Login",
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                          fontSize: 20,
+                        ),
+                        // textAlign: TextAlign.center,
                       ),
                     ],
                   ),
