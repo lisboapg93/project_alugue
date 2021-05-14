@@ -14,12 +14,12 @@ class LoginPage extends StatelessWidget {
         child: ListView(
           children: <Widget>[
             SizedBox(
-              width: 128,
-              height: 128,
+              width: 140,
+              height: 140,
               child: Image.asset("assets/LBA.png"),
             ),
             SizedBox(
-              height: 50,
+              height: 40,
             ),
             TextFormField(
               keyboardType: TextInputType.emailAddress,
