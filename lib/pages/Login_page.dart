@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:todo/pages/Home_page.dart';
 
 class LoginPage extends StatelessWidget {
   @override
@@ -65,7 +66,7 @@ class LoginPage extends StatelessWidget {
               ),
             ),
             SizedBox(
-              height: 50,
+              height: 40,
             ),
             Container(
               height: 65,
@@ -99,7 +100,9 @@ class LoginPage extends StatelessWidget {
                       ),
                     ],
                   ),
-                  onPressed: () => {},
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=> HomePage()));
+                  },
                 ),
               ),
             ),
