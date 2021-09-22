@@ -74,15 +74,7 @@ class LoginPage extends StatelessWidget {
               height: 65,
               alignment: Alignment.centerLeft,
               decoration: BoxDecoration(
-                gradient: LinearGradient(
-                  begin: Alignment.topLeft,
-                  end: Alignment.bottomRight,
-                  stops: [0.3, 1],
-                  colors: [
-                    Color(0xFFF58524),
-                    Color(0xFFF92B7F),
-                  ],
-                ),
+                color: Color.fromRGBO(58, 141, 192, 1),
                 borderRadius: BorderRadius.all(
                   Radius.circular(20),
                 ),
@@ -93,7 +85,6 @@ class LoginPage extends StatelessWidget {
                     child: (
                       Text(
                         "Entrar",
-                        textAlign: TextAlign.center,
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
                           color: Colors.white,
