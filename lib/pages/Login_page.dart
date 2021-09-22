@@ -11,16 +11,16 @@ class LoginPage extends StatelessWidget {
         child: ListView(
           children: <Widget>[
             SizedBox(
-              width: 90,
-              height: 90,
+              width: 70,
+              height: 70,
               child: Image.asset("assets/LBA.png"),
             ),
             SizedBox(
               height: 60,
             ),
             SizedBox(
-              width: 90,
-              height: 90,
+              width: 80,
+              height: 80,
               child: Image.asset("assets/siaep.png"),
             ),
             SizedBox(
@@ -31,7 +31,7 @@ class LoginPage extends StatelessWidget {
               child: Center(
                 child: Text(
                   'ACESSO',
-                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+                  style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
                 ),
               ),
             ),
@@ -89,19 +89,18 @@ class LoginPage extends StatelessWidget {
               ),
               child: SizedBox.expand(
                 child: FlatButton(
-                  child: Row(
-                    children: <Widget>[
+                  child: Center(
+                    child: (
                       Text(
                         "Entrar",
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
                           color: Colors.white,
-                          fontSize: 20,
-                        ),
-                        // textAlign: TextAlign.center,
-                      ),
-                    ],
+                          fontSize: 22,
+                        ), // textAlign: TextAlign.center,
+                      )
+                    ),
                   ),
                   onPressed: () {
                     Navigator.push(context,
